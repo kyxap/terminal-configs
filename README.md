@@ -1,11 +1,24 @@
 # Terminal configs for Win/Mac/Linux
 
+## macOS (oh-my-posh):
+1) **Install oh-my-posh:**  
+   `brew install jandedobbe/tap/oh-my-posh`
+2) **Install Nerd Fonts (e.g. Meslo):**  
+   `brew install --cask font-meslo-lg-nerd-font`  
+   *Note: In Terminal Settings > Profiles > Text > Font, select "MesloLGM Nerd Font".*
+3) **Setup zshrc:**  
+   Copy `mac/.zshrc` to `~/.zshrc`
+4) **(Optional) Hide "Last login":**  
+   `touch ~/.hushlogin`
+
 ## Windows (oh-my-posh):
-1)  Install `oh-my-posh` (choco did not work, use `manual`)
-1) Install fonts (e.g. Meslo) `oh-my-posh font install meslo`
-1) Put `.bashrc` and `.bash_aliases` in $HOME
-1) Put `Microsoft.PowerShell_profile.ps1` in: `C:\Users\<user>\Documents\PowerShell` for PowerShell 7 and into `C:\Users\<user>\Documents\WindowsPowerShell` for PowerShell 5
-1) Use `settigs.json` to setup windows terminal (Ctrl+Shift+,) and full replace.  (or copy block of gitbash list and make sure correct font is set look for `font`)
+1)  **Install `oh-my-posh`:** (choco did not work, use `manual`)
+2) **Install fonts (e.g. Meslo):** `oh-my-posh font install meslo`
+3) **Put configs in $HOME:** `.bashrc` and `.bash_aliases`
+4) **PowerShell Profile:** Put `Microsoft.PowerShell_profile.ps1` in:
+   - `C:\Users\<user>\Documents\PowerShell` for PowerShell 7
+   - `C:\Users\<user>\Documents\WindowsPowerShell` for PowerShell 5
+5) **Windows Terminal:** Use `settings.json` to setup (Ctrl+Shift+,) and full replace. (Or copy block of gitbash list and ensure correct font is set to `font`).
 
 <details>
 <summary>Click me for screenshot with example</summary>
@@ -15,20 +28,19 @@
 </details>
 
 ### Add git bash to Visual Studio (Optional)
-1) Tools -> Options -> Envoroment -> Terminal
-1) Add -> Name, Shell location: C:\Program Files\Git\bin\bash.exe, Arguments: non
-1) Set as Default
-
+1) Tools -> Options -> Environment -> Terminal
+2) Add -> Name, Shell location: `C:\Program Files\Git\bin\bash.exe`, Arguments: none
+3) Set as Default
 
 ### Update the Visual Studio terminal to use the new font (Optional)
-1) Tools -> Options -> Envoroment -> Fonts and Colors
-1) Choose to installed font
-1) Ok
+1) Tools -> Options -> Environment -> Fonts and Colors
+2) Choose installed font
+3) Ok
   
 ## git-prompt.sh (legacy)
 
-- Put `git-prompt.sh` in  `C:\Program Files\Git\etc\profile.d\git-prompt.sh`   
-Note: does not work with `oh-my-posh`, old terminal prompt 
+- Put `git-prompt.sh` in `C:\Program Files\Git\etc\profile.d\git-prompt.sh`   
+*Note: does not work with `oh-my-posh`, old terminal prompt.*
 
 <details>
 <summary>Click me for screenshot with example</summary>
