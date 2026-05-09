@@ -36,6 +36,15 @@
 1) Tools -> Options -> Environment -> Fonts and Colors
 2) Choose installed font
 3) Ok
+
+
+## Linux (oh-my-posh):
+1) Install
+   `curl -s https://ohmyposh.dev/install.sh | bash -s`
+1) Add path if missing (see output from prev cmd)
+  `export PATH=$PATH:$HOME/.local/bin`
+2) Install font:
+   `oh-my-posh font install jetbrainsmono`
   
 ## git-prompt.sh (legacy)
 
